@@ -82,7 +82,6 @@ p {
 a {
   color: var(--dark-grey1);
   text-decoration: none;
-  transition: all 0.35;
   font-size: 1.125rem;
 }
 
@@ -110,17 +109,16 @@ header {
   border: 3px solid var(--blue);
   border-radius: 7px;
   z-index: 1;
-  visibility: 0;
   opacity: 0;
 }
 
 .sub-menu li {
   padding-left: 1rem;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 
 .sub-menu li:first-child {
-  padding-top: 1 rem;
+  padding-top: 1rem;
 }
 
 .sub-menu li a {
