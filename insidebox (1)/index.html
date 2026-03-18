@@ -20,14 +20,27 @@
         <p>Welcome back</p>
         <nav>
             <!-- Create the main level and the secondary level (dropdown) navigation here -->
-            <ul>
+            <ul class="main-menu flex-container">
                 <li>
                     <a href="#">
                         <img src="img/profile.svg" alt="image of a profile icon">
-                        Prfile
+                        Profile
+                        <img src="img/arrow.svg" alt="arrow points towards right">
                     </a>
-                 </li>
-             </ul>
+                    <ul class="sub-menu">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Sign Out</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">
+                        <img src="img/courses.svg" alt="image of an icons represent the courses">Courses</a>
+                </li>
+                <li><a href="#">
+                        <img src="img/bell.svg" alt="image of a bell icon">Notifications</a>
+                </li>
+            </ul>
         </nav>
     </header>
 </body>
