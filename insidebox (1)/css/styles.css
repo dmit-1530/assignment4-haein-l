@@ -39,7 +39,8 @@ body {
   flex-flow: column wrap;
   gap: 1.5rem;
   margin-top: 1.5rem;
-  margin-left: 1rem;
+  padding: 0;
+  position: relative;
 }
 
 h1 {
@@ -48,8 +49,6 @@ h1 {
   color: var(--dark-grey2);
   font-weight: bold;
   margin: 0;
-  margin-left: 1rem;
-  margin-top: 1rem;
   margin-bottom: .5rem;
 }
 
@@ -61,7 +60,6 @@ p {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--dark-grey2);
-  margin-left: 1rem;
   padding-bottom: .5rem;
   border-bottom: 1px solid var(--light-grey);
 }
@@ -78,4 +76,64 @@ p {
 .main-menu li a {
   display: flex;
   gap: .5rem;
+  align-items: center;
+}
+
+a {
+  color: var(--dark-grey1);
+  text-decoration: none;
+  transition: all 0.35;
+  font-size: 1.125rem;
+}
+
+a:hover,
+a:focus {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+header {
+  border-right: 1px solid var(--light-grey);
+  background-color: white;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  height: 100vh;
+  width: 14.5rem;
+}
+
+.sub-menu {
+  position: absolute;
+  left: 60%;
+  top: -1rem;
+  min-width: 10.875rem;
+  background-color: white;
+  border: 3px solid var(--blue);
+  border-radius: 7px;
+  z-index: 1;
+  visibility: 0;
+  opacity: 0;
+}
+
+.sub-menu li {
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.sub-menu li:first-child {
+  padding-top: 1 rem;
+}
+
+.sub-menu li a {
+  border-bottom: 1px solid var(--light-grey);
+  padding-bottom: 0.5rem
+}
+
+.sub-menu li:last-child a {
+  border-bottom: none;
+  padding-bottom: 1rem;
+}
+
+.main-menu li:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
 }
